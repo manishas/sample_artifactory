@@ -4,7 +4,7 @@ go:
   - 1.7
 
 build:
-  ci:
+  pre_ci:
     - jfrog rt dl build/hello.txt
     - ls
 
