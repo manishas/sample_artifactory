@@ -1,0 +1,6 @@
+jobs:
+  - name: app-manifest
+    type: manifest
+    steps:
+      - IN: app-package
+      - IN: app-deploy-trigger

@@ -1,0 +1,5 @@
+resources:
+  - name: app-package
+    type: file
+    version:
+      sourceName: pages/data.json
