@@ -19,3 +19,10 @@ integrations:
   hub:
     - integrationName: mycompany-jfrog
       type: artifactory
+
+  notifications:
+    - integrationName: mycompany-pipeline-trigger
+      type: webhook
+      payload:
+        - versionName=$BUILD_NUMBER
+      on_success: always
