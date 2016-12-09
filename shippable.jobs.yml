@@ -11,5 +11,3 @@ jobs:
       - IN: app-manifest
         force: true
       - IN: app-cluster
-      - TASK:
-        - script: cp /tmp/shippable/app-manifest/app-package/index.html /tmp/shippable/index.html
