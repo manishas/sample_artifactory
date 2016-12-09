@@ -5,8 +5,8 @@ go:
 
 build:
   pre_ci:
-    - jfrog rt dl build/hello.txt
-    - ls
+    - mkdir artifacts
+    - jfrog rt dl builds/app.html artifacts/app.html
 
 integrations:
   hub:
