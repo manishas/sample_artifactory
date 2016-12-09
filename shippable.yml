@@ -13,7 +13,7 @@ build:
     - npm install
     - node index.js
     - jfrog rt u result.html pages/index.html
-    - jfrog rt u result.html pages/index.$BUILD_NUMBER.html
+    - jfrog rt u result.html pages/backups/index.$BUILD_NUMBER.html
 
 integrations:
   hub:
