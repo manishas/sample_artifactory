@@ -4,3 +4,9 @@ jobs:
     steps:
       - IN: app-package
       - IN: app-deploy-trigger
+
+  - name: app-deploy
+    type: deploy
+    steps:
+      - IN: app-manifest
+      - IN: app-cluster

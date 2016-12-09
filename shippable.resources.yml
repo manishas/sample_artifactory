@@ -6,3 +6,9 @@ resources:
       sourceName: pages/data.json
     seed:
       versionName: initial
+
+  - name: app-cluster
+    type: cluster
+    integration: mycompany-node-cluster
+    pointer:
+      sourceName: 'production-cluster'
