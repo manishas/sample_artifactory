@@ -11,4 +11,4 @@ jobs:
       - IN: app-manifest
       - IN: app-cluster
       - TASK:
-        - script: http-server -p 80 &
+        - script: cp /tmp/shippable/app-manifest/app-package/index.html /tmp/shippable/index.html
