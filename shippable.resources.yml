@@ -1,5 +1,5 @@
 resources:
   - name: app-package
     type: file
-    version:
+    pointer:
       sourceName: pages/data.json
