@@ -8,6 +8,12 @@ build:
     - mkdir artifacts
     - jfrog rt dl pages/app.html artifacts/app.html
 
+  pre_ci_boot:
+    image_name: drydock/u14
+    image_tag: tip
+    pull: false
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+
 integrations:
   hub:
     - integrationName: mycompany-jfrog
