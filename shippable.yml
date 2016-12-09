@@ -5,7 +5,7 @@ language: none
 
 build:
   pre_ci:
-    - jfrog rt dl pages/app.json
+    - jfrog rt dl pages/data.json
 
   pre_ci_boot:
     image_name: drydock/u14
@@ -14,7 +14,10 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
-    - jfrog rt dl pages/app.html
+    - sudo apt-get install nodejs
+    - npm install
+    - node index.js
+    - jfrog rt u result.html pages/index.$BUILD_NUMBER.html
 
 integrations:
   hub:
