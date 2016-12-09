@@ -5,14 +5,16 @@ language: none
 
 build:
   pre_ci:
-    - mkdir artifacts
-    - jfrog rt dl pages/app.html artifacts/app.html
+    - jfrog rt dl pages/app.json
 
   pre_ci_boot:
     image_name: drydock/u14
     image_tag: tip
     pull: false
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+
+  ci:
+    - jfrog rt dl pages/app.html
 
 integrations:
   hub:
