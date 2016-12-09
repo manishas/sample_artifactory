@@ -12,6 +12,7 @@ build:
     - sudo apt-get install nodejs
     - npm install
     - node index.js
+    - jfrog rt u result.html pages/index.html
     - jfrog rt u result.html pages/index.$BUILD_NUMBER.html
 
 integrations:
