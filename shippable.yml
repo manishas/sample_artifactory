@@ -5,7 +5,7 @@ go:
 
 build:
   ci:
-    - jrog rt dl build/hello.txt
+    - jfrog rt dl build/hello.txt
     - ls
 
 integrations:
