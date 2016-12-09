@@ -3,3 +3,5 @@ resources:
     type: file
     pointer:
       sourceName: pages/data.json
+    seed:
+      versionName: initial
