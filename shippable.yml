@@ -1,0 +1,14 @@
+language: go
+
+go:
+  - 1.7
+
+build:
+  ci:
+    - jrog rt dl build/hello.txt
+    - ls
+
+integrations:
+  hub:
+    - integrationName: mycompany-jfrog
+      type: artifactory
