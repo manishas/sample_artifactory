@@ -1,6 +1,7 @@
 resources:
   - name: app-package
     type: file
+    integration: mycompany-jfrog
     pointer:
       sourceName: pages/data.json
     seed:
