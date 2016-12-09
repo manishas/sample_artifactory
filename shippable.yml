@@ -1,7 +1,4 @@
 language: none
-#
-# go:
-#   - 1.7
 
 build:
   pre_ci_boot:
