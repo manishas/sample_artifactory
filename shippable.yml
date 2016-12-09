@@ -4,9 +4,6 @@ language: none
 #   - 1.7
 
 build:
-  pre_ci:
-    - jfrog rt dl pages/data.json
-
   pre_ci_boot:
     image_name: drydock/u14
     image_tag: tip
@@ -14,6 +11,7 @@ build:
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
+    - jfrog rt dl pages/data.json
     - sudo apt-get install nodejs
     - npm install
     - node index.js
