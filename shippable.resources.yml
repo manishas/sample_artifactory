@@ -3,7 +3,7 @@ resources:
     type: file
     integration: mycompany-jfrog
     pointer:
-      sourceName: pages/data.json
+      sourceName: pages/index.html
     seed:
       versionName: initial
 
