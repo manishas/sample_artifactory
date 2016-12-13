@@ -2,13 +2,12 @@ jobs:
   - name: app-manifest
     type: manifest
     steps:
-      # - IN: app-package
+      - IN: app-package
       - IN: app-deploy-trigger
 
   - name: app-deploy
     type: deploy
     steps:
-      # - IN: app-manifest
-      #   force: true
-      - IN: app-package
+      - IN: app-manifest
+        force: true
       - IN: app-cluster
