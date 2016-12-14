@@ -7,8 +7,6 @@ resources:
     seed:
       versionName: initial
 
-  - name: app-cluster
+  - name: app-cluster-2
     type: cluster
     integration: mycompany-node-cluster
-    pointer:
-      sourceName: 'production-cluster'

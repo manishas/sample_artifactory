@@ -10,4 +10,4 @@ jobs:
     steps:
       - IN: app-manifest
         force: true
-      - IN: app-cluster
+      - IN: app-cluster-2
