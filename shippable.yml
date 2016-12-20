@@ -21,7 +21,7 @@ integrations:
       type: artifactory
 
   notifications:
-    - integrationName: mycompany-pipeline-trigger
+    - integrationName: manishas-artifactory-pipeline-trigger
       type: webhook
       payload:
         - versionName=$BUILD_NUMBER
