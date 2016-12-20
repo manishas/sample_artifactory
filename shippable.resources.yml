@@ -1,7 +1,7 @@
 resources:
   - name: app-package
     type: file
-    integration: mycompany-jfrog
+    integration: manishas-jfrog
     pointer:
       sourceName: pages/index.html
     seed:
