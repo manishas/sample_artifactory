@@ -47,7 +47,7 @@ integrations:
 ```
 
 ### Step 2: Create JFrog Artifactory Integration
-In the yml, we could notice `mycompany-jfrog`, so we need to add a account Integration from Shippable UI with that name.
+In the yml, we could notice `mycompany-jfrog`, so we need to add an account Integration from Shippable UI with that name.
 ```yml
 integrations:
   hub:
@@ -75,4 +75,4 @@ Please refer [this section](http://docs.shippable.com/ci/runFirstBuild/) for tut
 After running the build, the following output could be observed in Shippable.
 ![image](https://cloud.githubusercontent.com/assets/4211715/21348264/3fac278e-c6d2-11e6-86ca-0289c6387e7d.png)
 
-To know about setting up continuous deployment with JFrog Artifactory and Shippable's declartive ymls, Please visit the  [pipelines branch](https://github.com/shippableSamples/sample_artifactory/tree/pipelines).
+To know about setting up continuous deployment with JFrog Artifactory and Shippable's declarative ymls, Please visit the  [pipelines branch](https://github.com/shippableSamples/sample_artifactory/tree/pipelines).
