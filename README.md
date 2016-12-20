@@ -8,6 +8,8 @@ CI process will run a node.js program to template a static html file with inform
 The result file `result.html` will be pushed to artifactory repository (`pages`).
 It will upload the `result.html` to `pages/index.html` and a backup copy to `pages/backups/index.$BUILD_NUMBER.html`
 
+The `pages/index.html` file is the resulting artifact that is pushed to JFrog Artifactory and it could be used in continuous deployment.
+
 ![image](https://cloud.githubusercontent.com/assets/4211715/21347806/37984232-c6d0-11e6-90e6-3b043b0ac649.png)
 
 
@@ -65,3 +67,12 @@ This step is only needed, if you want to setup Continuous deployment after the C
       on_success: always
 ```
 Please refer to [Shippable documentation](http://docs.shippable.com/integrations/notifications/webhooks/) for tutorial on how to add Webhook account integration.
+
+### Step 4: Run the build.
+Please refer [this section](http://docs.shippable.com/ci/runFirstBuild/) for tutorial on how to build a project.
+
+## Conclusion
+After running the build, the following output could be observed in Shippable.
+![image](https://cloud.githubusercontent.com/assets/4211715/21348264/3fac278e-c6d2-11e6-86ca-0289c6387e7d.png)
+
+To know about setting up continuous deployment with JFrog Artifactory and Shippable's declartive ymls, Please visit the  [pipelines branch](https://github.com/shippableSamples/sample_artifactory/tree/pipelines).
