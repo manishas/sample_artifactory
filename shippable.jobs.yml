@@ -11,3 +11,6 @@ jobs:
       - IN: app-manifest
         force: true
       - IN: app-cluster-2
+      - TASK:
+        - script: pwd
+    
